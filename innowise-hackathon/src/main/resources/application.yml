@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: innowise-hackathon
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/cryptoDB
+    username: postgres
+    password: root
+  flyway:
+    enabled: true
+    schemas: public
+    default-schema: public
+    validate-on-migrate: true
+  cloud:
+    openfeign:
+      client:
+        config:
+          default:
+            connectTimeout: 5000
+            readTimeout: 5000
+            loggerLevel: basic
+bot:
+  name: "XXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  token: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  chatId:
